@@ -214,7 +214,7 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 /* ==========================================================================
 PAGE HEADER
 ========================================================================== */
-.hero { background: url('../img/cool.gif') no-repeat center center; opacity: 0.9; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; 
+.hero { background: url('../img/optimized.gif') no-repeat center center; opacity: 0.9; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; 
 
 
 }
@@ -266,37 +266,6 @@ a.button {
 .btnSlide:hover .top {
   top: 40px;
 }
-/* ==========================================================================
-EMBEDDED VIDEO
-========================================================================== */
-/*
-section.video i {
-    margin-right: 10px;
-    color: #323a45;
-    vertical-align: middle;
-    font-size: 50px;
-    -webkit-transition: color 300ms ease-in-out;
-    transition: color 300ms ease-in-out;
-}
-section.video h1 {
-    font-weight: 400;
-    font-size: 20px;
-}
-section.video {
-    padding: 60px 0;
-    background-color: #f6f7f9;
-}
-section.video a {
-    color: #323a45
-}
-section.video a:hover, section.video a:focus {
-    color: #73d0da;
-    text-decoration: none;
-}
-section.video a:hover i, section.video a:focus i {
-    color: #73d0da
-}
-*/
 
 /* ==========================================================================
 WELCOME TO COSAS
