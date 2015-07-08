@@ -436,19 +436,23 @@ if($_POST["message"]) {
 
             <form action="//formspree.io/info@saudercoop.com" id="form" method = "POST" name = "form">
             <p>
-              <input type="text" value="" name="name" placeholder="Name" required>
+              <input type="text" value="" name="Name" placeholder="Name" required>
             </p>
             <p>
-              <input type="text" value="" name="email" placeholder = "Your E-Mail" required>
+              <input type="text" value="" name="Reply To" placeholder = "Your E-Mail" required>
           
             <p>
-              <input type="text" value="" name="sub" placeholder = "Subject" optional>
+              <input type="text" value="" name="Subject" placeholder = "Subject" optional>
 
             </p>
             <p>
-              <input type="text" name="z_comment" value="" placeholder="Comment" required>
+
+
+
+              <textarea maxlength="1000" cols="46" rows="4" type="text" name="Comments" value="" placeholder="Comment" required></textarea>
             </p>
               <input type="submit" name="" value="Send"></a>
+
             </form>
           </div>
         </section>
