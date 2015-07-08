@@ -421,18 +421,25 @@ if($_POST["message"]) {
             </div>
           </div>
         </section>
-
+<!--
+<form action="//formspree.io/your@email.com"
+      method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+</form>
+-->
 
         <section class="subscribe text-center">
           <div class="container">
             <h1><i class="fa fa-comment-o"></i><span>Contact Us</span></h1>
 
-            <form action="contact.php" id="form" method = "post" name = "form">
+            <form action="//formspree.io/info@coopsauder.com" id="form" method = "POST" name = "form">
             <p>
-              <input type="text" value="" name="vname" placeholder="Name" required>
+              <input type="text" value="" name="name" placeholder="Name" required>
             </p>
             <p>
-              <input type="text" value="" name="vemail" placeholder = "Your E-Mail" required>
+              <input type="text" value="" name="email" placeholder = "Your E-Mail" required>
           
             <p>
               <input type="text" value="" name="sub" placeholder = "Subject" optional>
@@ -441,7 +448,7 @@ if($_POST["message"]) {
             <p>
               <input type="text" name="z_comment" value="" placeholder="Comment" required>
             </p>
-              <input type="submit" name="" value="Submit"><a href="http://www.freecontactform.com/email_form.php"></a>
+              <input type="submit" name="" value="Send"></a>
             </form>
           </div>
         </section>
