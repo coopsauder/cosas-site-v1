@@ -611,6 +611,7 @@ PAGE HEADER
   background-size: cover;
   padding: 65px 0 300px 0;
   height: auto;
+  overflow-y: hidden;
 }
 .hero h1 {
   font-size: 60px;
