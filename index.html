@@ -1,100 +1,88 @@
-<?php
-if($_POST["message"]) {
-    mail("jhy@outlook.com", "Form to email message", $_POST["message"], "From: an@email.address");
-}
-?>
+<!DOCTYPE html>
 
-  <!DOCTYPE html>
+<html lang="en">
 
-  <html lang="en">
+<head>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UBC COSAS | Co-op Student Association of Sauder</title>
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/queries.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
 
-  <head>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UBC COSAS | Co-op Student Association of Sauder</title>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <!--
-<link href="css/jquery.fancybox.css" rel="stylesheet">
-    <link href="css/flickity.css" rel="stylesheet" >
-
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-  -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
 
-    <!-- jQuery Plugin -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+  <!-- jQuery Plugin -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 
-  </head>
+</head>
 
-  <body id="top">
-    <header id="home">
-      <nav>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-              <nav class="pull">
-                <ul class="top-nav">
-                  <li><a href="#intro">About Us &nbsp;<i class = "fa fa-heart"></i><span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
+<body id="top">
+  <header id="home">
+    <nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+            <nav class="pull">
+              <ul class="top-nav">
+                <li><a href="#intro">About Us &nbsp;<i class = "fa fa-heart"></i><span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
 
-                  <li><a href="#features">Our Mission &nbsp;<i class = "fa fa-rocket"></i> <span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
+                <li><a href="#features">Our Mission &nbsp;<i class = "fa fa-rocket"></i> <span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
 
-                  <li><a href="#portfolio">Our Signature Events &nbsp;<i class = "fa fa-calendar"></i> <span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
+                <li><a href="#portfolio">Our Signature Events &nbsp;<i class = "fa fa-calendar"></i> <span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
 
-                  <li><a href="#database">Professional Database &nbsp;<i class = "fa fa-file-text"></i> <span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
+                <li><a href="#database">Professional Database &nbsp;<i class = "fa fa-file-text"></i> <span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
 
-                  <li><a href="#team">Our Team &nbsp;<i class = "fa fa-users"></i> <span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
+                <li><a href="#team">Our Team &nbsp;<i class = "fa fa-users"></i> <span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
 
-                  <li><a href="#contact">Contact Us &nbsp;<i class = "fa fa-paper-plane"></i><span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
-                </ul>
-              </nav>
-            </div>
+                <li><a href="#contact">Contact Us &nbsp;<i class = "fa fa-paper-plane"></i><span class="indicator"><i class="fa fa-angle-double-right"></i></span></a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </nav>
-      <section class="hero" id="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-right navicon">
-              <a id="nav-toggle" class="nav_slide_button" href="#">
-                <span></span>
-              </a>
-            </div>
+      </div>
+    </nav>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-right navicon">
+            <a id="nav-toggle" class="nav_slide_button" href="#">
+              <span></span>
+            </a>
           </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center inner">
-              <h1 class="animated fadeInDown">
-                <FONT COLOR="FFFFFF">CO-OP STUDENT ASSOCIATION
-                  <br>OF <b>SAUDER</b></FONT>
-              </h1>
-              <p class="animated fadeInUp delay-05s">
-                <FONT COLOR="FFFFFF">Maximizing Opportunities For Students, By Students
-                  <FONT>
-              </p>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center inner">
+            <h1 class="animated fadeInDown">
+              <FONT COLOR="FFFFFF">CO-OP STUDENT ASSOCIATION
+                <br>OF <b>SAUDER</b></FONT>
+            </h1>
+            <p class="animated fadeInUp delay-05s">
+              <FONT COLOR="FFFFFF">Maximizing Opportunities For Students, By Students
+                <FONT>
+            </p>
           </div>
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center">
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
 
 
 
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="http://www.youtube.com/v/aPx_Xge-wzM&hl=en_US&fs=1&autoplay=1" class="button btnPush btnLightBlue">Watch Our Latest Video<a>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                <a href="http://www.youtube.com/v/aPx_Xge-wzM&hl=en_US&fs=1&autoplay=1" class="button btnPush btnLightBlue">Watch Our Latest Video<a>
   </div>
 </div>
 
@@ -194,61 +182,61 @@ if($_POST["message"]) {
               <div class="col-md-8 col-md-offset-2">
                 <h1>Our<span>signature <FONT COLOR= "5DC8CD"><b>co-op</b></FONT> events</span></h1>
                 <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
-                </div>
               </div>
             </div>
-      </section>
-      <section class="portfolio text-center section-padding" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div id="portfolioSlider">
-              <ul class="slides">
-                <li>
+          </div>
+    </section>
+    <section class="portfolio text-center section-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div id="portfolioSlider">
+            <ul class="slides">
+              <li>
 
-                  <div class="col-md-4 wp4">
-                    <div class="overlay-effect effects clearfix">
-                      <div class="img">
-                        <img src="img/portfolio-03.jpg" alt="Portfolio Item">
-                        <div class="overlay">
-                          <a href="https://www.facebook.com/events/1701865676713259/" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
-                          <a class="close-overlay hidden">x</a>
-                        </div>
+                <div class="col-md-4 wp4">
+                  <div class="overlay-effect effects clearfix">
+                    <div class="img">
+                      <img src="img/portfolio-03.jpg" alt="Portfolio Item">
+                      <div class="overlay">
+                        <a href="https://www.facebook.com/events/1701865676713259/" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
+                        <a class="close-overlay hidden">x</a>
                       </div>
                     </div>
-                    <h2>COSAS Mingle Night</h2>
-                    <p>Join COSAS and the Co-op office at the COSAS Mingle Night, where prospective students can learn more about the Co-op program and the COSAS community! </p>
                   </div>
+                  <h2>COSAS Mingle Night</h2>
+                  <p>Join COSAS and the Co-op office at the COSAS Mingle Night, where prospective students can learn more about the Co-op program and the COSAS community! </p>
+                </div>
 
-                  <div class="col-md-4 wp4 delay-05s">
-                    <div class="overlay-effect effects clearfix">
-                      <div class="img">
-                        <img src="img/portfolio-01.jpg" alt="Portfolio Item">
-                        <div class="overlay">
-                          <a href="https://www.facebook.com/events/1673917089507384/" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
-                          <a class="close-overlay hidden">x</a>
-                        </div>
+                <div class="col-md-4 wp4 delay-05s">
+                  <div class="overlay-effect effects clearfix">
+                    <div class="img">
+                      <img src="img/portfolio-01.jpg" alt="Portfolio Item">
+                      <div class="overlay">
+                        <a href="https://www.facebook.com/events/1673917089507384/" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
+                        <a class="close-overlay hidden">x</a>
                       </div>
                     </div>
-                    <h2>COSAS Summer Beach Party</h2>
-                    <p> Do you want to go to the beach on a sunny Saturday, enjoy some BBQ and hang with your fellow Co-op students? Click above for more info!
-                    </p>
                   </div>
+                  <h2>COSAS Summer Beach Party</h2>
+                  <p> Do you want to go to the beach on a sunny Saturday, enjoy some BBQ and hang with your fellow Co-op students? Click above for more info!
+                  </p>
+                </div>
 
-                  <div class="col-md-4 wp4 delay-1s">
-                    <div class="overlay-effect effects clearfix">
-                      <div class="img">
-                        <img src="img/portfolio-02.jpg" alt="Portfolio Item">
-                        <div class="overlay">
-                          <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
-                          <a class="close-overlay hidden">x</a>
-                        </div>
+                <div class="col-md-4 wp4 delay-1s">
+                  <div class="overlay-effect effects clearfix">
+                    <div class="img">
+                      <img src="img/portfolio-02.jpg" alt="Portfolio Item">
+                      <div class="overlay">
+                        <a href="https://www.facebook.com/cosas.ubc?fref=ts" class="expand"><i class="fa fa-facebook"></i><br>View Facebook Event</a>
+                        <a class="close-overlay hidden">x</a>
                       </div>
                     </div>
-                    <h2>Real Talk Series</h2>
-                    <p>Introducing the COSAS exclusive series: Real Talk. COSAS will be hosting a series of information sessions through the year.</p>
                   </div>
-                </li>
-                <!--
+                  <h2>Real Talk Series</h2>
+                  <p>Introducing the COSAS exclusive series: Real Talk. COSAS will be hosting a series of information sessions through the year.</p>
+                </div>
+              </li>
+              <!--
                 <li>
                   <div class="col-md-4 wp4">
                     <div class="overlay-effect effects clearfix">
@@ -292,202 +280,202 @@ if($_POST["message"]) {
                   </div>
                 </li>
               -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="database text-center" id="database">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>
+              <span>Our
+                <FONT COLOR="5DC8CD"> <b>Professional</b></FONT> Resource Database</span>
+            </h1>
+            <p>
+              <FONT COLOR="FFFFFF">Looking for resumes, cover letters, or interview prep?</FONT>
+            </p>
+            <p>
+              <FONT COLOR="FFFFFF">Utilize our tools to <b>maximize</b> your professional potential.</FONT>
+            </p>
+            <a href="database.html" class="ignite-btn">Go To Resources</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team text-center section-padding" id="team">
+      <div class="container">
+
+        <div class="col-md-12">
+          <h1 class="arrow">Our Team</h1>
+
+        </div>
+        <div class="row">
+          <div class="team-wrapper">
+            <div id="teamSlider">
+              <ul class="slides">
+
+                <li>
+                  <div class="col-md-4 wp5">
+                    <img src="img/tyler.png" alt="Team Member">
+                    <h2>Tyler Young
+                      <br>
+                      <br>
+                      <FONT SIZE=2 COLOR="a1a9b0">President</FONT>
+                    </h2>
+                    </h2>
+                    <p>Tyler is a fourth year student studying accounting, with aspirations to obtain a CPA designation after graduation. Formerly a conflicted science student, Tyler has found his fit with the accounting career path. A self-described comic
+                      book fanatic, he also enjoys working out, playing squash, and trying out new foods.</p>
+                    <div class="social">
+                      <ul class="social-buttons">
+                        <li><a href="https://ca.linkedin.com/in/tylerwyoung" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:tylerwyoung00@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 wp5 delay-05s">
+                    <img src="img/kevin.png" alt="Team Member">
+                    <h2>Kevin Yu
+                      <br>
+                      <br>
+                      <FONT SIZE=2 COLOR="a1a9b0">Vice-President</FONT>
+                    </h2>
+                    </h2>
+                    <p>Kevin is in his fourth year pursing a double option in General Business Management and Finance. His passion lies with personal development and mentorship. Outside of academics, Kevin loves to occasionally participate in a friendly
+                      game of poker. He is adventurous and unorthodox, always looking for a new experience in his life.</p>
+
+                    <div class="social">
+                      <ul class="social-buttons">
+                        <li><a href="https://ca.linkedin.com/in/kevinyu3" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:kevin.hak.yu@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 wp5 delay-1s">
+                    <img src="img/joseph.png" alt="Team Member">
+                    <h2>Joseph Lee
+                      <br>
+                      <br>
+                      <FONT SIZE=2 COLOR="a1a9b0">VP Technology</FONT>
+                    </h2>
+                    <p>Joseph is an incoming third year student in the BUCS program, pursuing a combined major in Business and Computer Science. He is an avid technology enthusiast, and he hopes to eventually launch a successful career in the technology
+                      industry. Aside from tech, Joseph is passionate about all facets of hockey and football.</p>
+                    <div class="social">
+                      <ul class="social-buttons">
+                        <li><a href="https://ca.linkedin.com/in/jhylee" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:joseph@jhylee.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="col-md-4 wp5">
+                    <img src="img/jenny.png" alt="Team Member">
+                    <h2>Jenny Tao
+                      <br>
+                      <br>
+                      <FONT SIZE=2 COLOR="a1a9b0">VP Events</FONT>
+                    </h2>
+                    </h2>
+                    <p>Jenny is in her final year studying Finance. Her coop work terms offered her different experiences in the financial industry from insurance to wealth management. She hopes to pursue a law degree, specializing for the financial sector,
+                      in the future. Jenny enjoys travelling, making dubsmash videos, and trying out new restaurants.</p>
+                    <div class="social">
+                      <ul class="social-buttons">
+                        <li><a href="https://ca.linkedin.com/in/jhylee" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:jennyztao@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 wp5 delay-05s">
+                    <img src="img/cindy.png" alt="Team Member">
+                    <h2>Cindy Leung
+                      <br>
+                      <br>
+                      <FONT SIZE=2 COLOR="a1a9b0">VP Finance and Internal</FONT>
+                    </h2>
+                    </h2>
+                    <p>Cindy is in her final year studying Accounting and Business Technology Management. She is actively pursuing a career in IT Audit with hopes to bridge the gap between financials and technology. Outside of UBC, Cindy is passionate about
+                      giving back to the community through volunteering and managing her social initiative.</p>
+                    <div class="social">
+                      <ul class="social-buttons">
+                        <li><a href="https://ca.linkedin.com/in/cindyyhl" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:cindyyhleung@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 wp5 delay-1s">
+                    <img src="img/ruby.png" alt="Team Member">
+                    <h2>Ruby Chen
+                      <br>
+                      <br>
+                      <FONT SIZE=2 COLOR="a1a9b0">VP Marketing</FONT>
+                    </h2>
+                    </h2>
+                    <p>Ruby is in her third year pursuing Marketing and BTM. She’s passionate about psychology, technology and great design. Honest and somewhat opinionated, Ruby enjoys a long debate with close friends, ideally with icecream or Starbucks.
+                      “It takes nothing to join the crowd. It takes everything to stand alone.”</p>
+                    <div class="social">
+                      <ul class="social-buttons">
+                        <li><a href="https://ca.linkedin.com/in/rubychen16" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:ruby.chen@alumni.ubc.ca" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="col-md-4 wp5">
+                    <img src="img/james.png" alt="Team Member">
+                    <h2>James Yue
+                      <br>
+                      <br>
+                      <FONT SIZE=2 COLOR="a1a9b0">VP Strategic Initiatives</FONT>
+                    </h2>
+                    </h2>
+                    <p>A dynamic and diligent fourth year Accounting student. Passionate about empowering youth to make sound financial decisions. Experienced in team settings, while constantly strengthening customer-service skills. A detail-oriented individual
+                      who thrives in undertaking challenging responsibilities and opportunities for personal growth.</p>
+                    <div class="social">
+                      <ul class="social-buttons">
+                        <li><a href="https://ca.linkedin.com/in/jamesyue" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:james.yue22@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 wp5 delay-05s">
+                    <img src="img/hazel.png" alt="Team Member">
+                    <h2>Hazel Wong
+                      <br>
+                      <br>
+                      <FONT SIZE=2 COLOR="a1a9b0">VP Strategic Initiatives</FONT>
+                    </h2>
+                    </h2>
+                    <p>Hazel is going into her fourth year pursuing a double in Accounting and Marketing in hopes to work for the non-profit sector. A phrase that she uses to describe herself is “to break and to make”. Her fondness for art means she likes
+                      to take things apart and to re-combine the pieces in different ways.
+                      <br>
+                      <br>
+                    </p>
+                    <div class="social">
+                      <ul class="social-buttons">
+                        <li><a href="https://ca.linkedin.com/in/hazelwong" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:hazelwong22@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="database text-center" id="database">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>
-                <span>Our
-                  <FONT COLOR="5DC8CD"> <b>Professional</b></FONT> Resource Database</span>
-              </h1>
-              <p>
-                <FONT COLOR="FFFFFF">Looking for resumes, cover letters, or interview prep?</FONT>
-              </p>
-              <p>
-                <FONT COLOR="FFFFFF">Utilize our tools to <b>maximize</b> your professional potential.</FONT>
-              </p>
-              <a href="database.html" class="ignite-btn">Go To Resources</a>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="team text-center section-padding" id="team">
-        <div class="container">
-
-          <div class="col-md-12">
-            <h1 class="arrow">Our Team</h1>
-
-          </div>
-          <div class="row">
-            <div class="team-wrapper">
-              <div id="teamSlider">
-                <ul class="slides">
-
-                  <li>
-                    <div class="col-md-4 wp5">
-                      <img src="img/tyler.png" alt="Team Member">
-                      <h2>Tyler Young
-                        <br>
-                        <br>
-                        <FONT SIZE=2 COLOR="a1a9b0">President</FONT>
-                      </h2>
-                      </h2>
-                      <p>Tyler is a fourth year student studying accounting, with aspirations to obtain a CPA designation after graduation. Formerly a conflicted science student, Tyler has found his fit with the accounting career path. A self-described comic
-                        book fanatic, he also enjoys working out, playing squash, and trying out new foods.</p>
-                      <div class="social">
-                        <ul class="social-buttons">
-                          <li><a href="https://ca.linkedin.com/in/tylerwyoung" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="mailto:tylerwyoung00@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 wp5 delay-05s">
-                      <img src="img/kevin.png" alt="Team Member">
-                      <h2>Kevin Yu
-                        <br>
-                        <br>
-                        <FONT SIZE=2 COLOR="a1a9b0">Vice-President</FONT>
-                      </h2>
-                      </h2>
-                      <p>Kevin is in his fourth year pursing a double option in General Business Management and Finance. His passion lies with personal development and mentorship. Outside of academics, Kevin loves to occasionally participate in a friendly
-                        game of poker. He is adventurous and unorthodox, always looking for a new experience in his life.</p>
-
-                      <div class="social">
-                        <ul class="social-buttons">
-                          <li><a href="https://ca.linkedin.com/in/kevinyu3" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="mailto:kevin.hak.yu@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 wp5 delay-1s">
-                      <img src="img/joseph.png" alt="Team Member">
-                      <h2>Joseph Lee
-                        <br>
-                        <br>
-                        <FONT SIZE=2 COLOR="a1a9b0">VP Technology</FONT>
-                      </h2>
-                      <p>Joseph is an incoming third year student in the BUCS program, pursuing a combined major in Business and Computer Science. He is an avid technology enthusiast, and he hopes to eventually launch a successful career in the technology
-                        industry. Aside from tech, Joseph is passionate about all facets of hockey and football.</p>
-                      <div class="social">
-                        <ul class="social-buttons">
-                          <li><a href="https://ca.linkedin.com/in/jhylee" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="mailto:joseph@jhylee.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-4 wp5">
-                      <img src="img/jenny.png" alt="Team Member">
-                      <h2>Jenny Tao
-                        <br>
-                        <br>
-                        <FONT SIZE=2 COLOR="a1a9b0">VP Events</FONT>
-                      </h2>
-                      </h2>
-                      <p>Jenny is in her final year studying Finance. Her coop work terms offered her different experiences in the financial industry from insurance to wealth management. She hopes to pursue a law degree, specializing for the financial sector,
-                        in the future. Jenny enjoys travelling, making dubsmash videos, and trying out new restaurants.</p>
-                      <div class="social">
-                        <ul class="social-buttons">
-                          <li><a href="https://ca.linkedin.com/in/jhylee" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="mailto:jennyztao@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 wp5 delay-05s">
-                      <img src="img/cindy.png" alt="Team Member">
-                      <h2>Cindy Leung
-                        <br>
-                        <br>
-                        <FONT SIZE=2 COLOR="a1a9b0">VP Finance and Internal</FONT>
-                      </h2>
-                      </h2>
-                      <p>Cindy is in her final year studying Accounting and Business Technology Management. She is actively pursuing a career in IT Audit with hopes to bridge the gap between financials and technology. Outside of UBC, Cindy is passionate
-                        about giving back to the community through volunteering and managing her social initiative.</p>
-                      <div class="social">
-                        <ul class="social-buttons">
-                          <li><a href="https://ca.linkedin.com/in/cindyyhl" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="mailto:cindyyhleung@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-4 wp5 delay-1s">
-                      <img src="img/ruby.png" alt="Team Member">
-                      <h2>Ruby Chen
-                        <br>
-                        <br>
-                        <FONT SIZE=2 COLOR="a1a9b0">VP Marketing</FONT>
-                      </h2>
-                      </h2>
-                      <p>Ruby is in her third year pursuing Marketing and BTM. She’s passionate about psychology, technology and great design. Honest and somewhat opinionated, Ruby enjoys a long debate with close friends, ideally with icecream or Starbucks.
-                        “It takes nothing to join the crowd. It takes everything to stand alone.”</p>
-                      <div class="social">
-                        <ul class="social-buttons">
-                          <li><a href="https://ca.linkedin.com/in/rubychen16" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="mailto:ruby.chen@alumni.ubc.ca" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="col-md-4 wp5">
-                      <img src="img/james.png" alt="Team Member">
-                      <h2>James Yue
-                        <br>
-                        <br>
-                        <FONT SIZE=2 COLOR="a1a9b0">VP Strategic Initiatives</FONT>
-                      </h2>
-                      </h2>
-                      <p>A dynamic and diligent fourth year Accounting student. Passionate about empowering youth to make sound financial decisions. Experienced in team settings, while constantly strengthening customer-service skills. A detail-oriented individual
-                        who thrives in undertaking challenging responsibilities and opportunities for personal growth.</p>
-                      <div class="social">
-                        <ul class="social-buttons">
-                          <li><a href="https://ca.linkedin.com/in/jamesyue" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="mailto:james.yue22@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-4 wp5 delay-05s">
-                      <img src="img/hazel.png" alt="Team Member">
-                      <h2>Hazel Wong
-                        <br>
-                        <br>
-                        <FONT SIZE=2 COLOR="a1a9b0">VP Strategic Initiatives</FONT>
-                      </h2>
-                      </h2>
-                      <p>Hazel is going into her fourth year pursuing a double in Accounting and Marketing in hopes to work for the non-profit sector. A phrase that she uses to describe herself is “to break and to make”. Her fondness for art means she likes
-                        to take things apart and to re-combine the pieces in different ways.
-                        <br>
-                        <br>
-                      </p>
-                      <div class="social">
-                        <ul class="social-buttons">
-                          <li><a href="https://ca.linkedin.com/in/hazelwong" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                          <li><a href="mailto:hazelwong22@gmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--
+      </div>
+    </section>
+    <!--
 <form action="//formspree.io/your@email.com"
       method="POST">
     <input type="text" name="name">
@@ -495,30 +483,30 @@ if($_POST["message"]) {
     <input type="submit" value="Send">
 </form>
 -->
-      <section class="subscribe text-center">
-        <div class="container crap">
-          <h1><i class="fa fa-comment-o"></i>
-            <span>Contact Us</span>
-          </h1>
-          <form action="//formspree.io/cosas@saudercoop.com" id="form" method="POST" name="form">
+    <section class="subscribe text-center">
+      <div class="container crap">
+        <h1><i class="fa fa-comment-o"></i>
+          <span>Contact Us</span>
+        </h1>
+        <form action="//formspree.io/cosas@saudercoop.com" id="form" method="POST" name="form">
+          <p>
+            <input type="text" value="" name="Name" placeholder="Name" required>
+          </p>
+          <p>
+            <input type="text" value="" name="_replyto" placeholder="Your E-Mail" required>
             <p>
-              <input type="text" value="" name="Name" placeholder="Name" required>
+              <input type="text" value="" name="Subject" placeholder="Subject" optional>
             </p>
             <p>
-              <input type="text" value="" name="_replyto" placeholder="Your E-Mail" required>
-              <p>
-                <input type="text" value="" name="Subject" placeholder="Subject" optional>
-              </p>
-              <p>
-                <textarea maxlength="1000" cols="46" rows="4" type="text" name="Comments" value="" placeholder="Comment" required></textarea>
-              </p>
-              <input type="hidden" name="_next" value="thanks.html" />
-              <input type="submit" name="" value="Send">
-              </a>
-          </form>
-        </div>
-      </section>
-      <!--
+              <textarea maxlength="1000" cols="46" rows="4" type="text" name="Comments" value="" placeholder="Comment" required></textarea>
+            </p>
+            <input type="hidden" name="_next" value="thanks.html" />
+            <input type="submit" name="" value="Send">
+            </a>
+        </form>
+      </div>
+    </section>
+    <!--
       <section class="subscribe text-center">
 
           <div class="typeform-widget cool" data-url="https://cosassauder.typeform.com/to/O5Qhsc" data-text="Branding Questionnaire" style="width:100%;height:500px;"></div>
@@ -543,125 +531,125 @@ if($_POST["message"]) {
       </section>
     -->
 
-      <section class="dark-bg text-center section-padding contact-wrap" id="contact">
-        <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="arrow">Drop us a line</h1>
+    <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+      <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="arrow">Drop us a line</h1>
+          </div>
+        </div>
+        <div class="row contact-details">
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-map-marker"></i>
+                <span>Address</span>
+              </h2>
+              <p>155-2053 Main Mall, UBC Sauder School</p>
             </div>
           </div>
-          <div class="row contact-details">
-            <div class="col-md-4">
-              <div class="light-box box-hover">
-                <h2><i class="fa fa-map-marker"></i>
-                  <span>Address</span>
-                </h2>
-                <p>155-2053 Main Mall, UBC Sauder School</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="light-box box-hover">
-                <h2><i class="fa fa-mobile"></i>
-                  <span>Co-Op Office</span>
-                </h2>
-                <p>604.822.9422</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="light-box box-hover">
-                <h2><i class="fa fa-envelope-o"></i>
-                  <span>Email</span>
-                </h2>
-                <p>info@saudercoop.com</p>
-              </div>
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-mobile"></i>
+                <span>Co-Op Office</span>
+              </h2>
+              <p>604.822.9422</p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="social-buttons">
-                <li><a href="https://www.linkedin.com/company/10026451?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1436326714960%2Ctas%3Aco-op%20student%20a" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/ubcsauderbcom" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/cosas.ubc?fref=ts" class="social-btn"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/cosas.sauder" class="social-btn"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="mailto:info@saudercoop.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-
-              </ul>
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-envelope-o"></i>
+                <span>Email</span>
+              </h2>
+              <p>info@saudercoop.com</p>
             </div>
           </div>
         </div>
-      </section>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="social-buttons">
+              <li><a href="https://www.linkedin.com/company/10026451?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1436326714960%2Ctas%3Aco-op%20student%20a" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://twitter.com/ubcsauderbcom" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/cosas.ubc?fref=ts" class="social-btn"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://instagram.com/cosas.sauder" class="social-btn"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="mailto:info@saudercoop.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
 
-
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="legals">
-
-                <li>
-                  <p>Made with
-                    <FONT COLOR="BF360C"><i class="fa fa-heart"></i></FONT> by <a href="http://nullstudios.me">Null Studios</a> | UBC COSAS. All Rights Reserved.</p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6 credit">
-              <a href="http://www.cus.ca">
-                <img src="img/cus.png">
-              </a>
-              <a href="http://www.sauder.ubc.ca">
-                <img src="img/sauder.png" Hspace="20">
-              </a>
-              <a href="http://www.ubc.ca">
-                <img src="img/ubc.png">
-              </a>
-            </div>
+            </ul>
           </div>
         </div>
-      </footer>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/waypoints.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/scripts.js"></script>
-      <script src="js/jquery.flexslider.js"></script>
-      <script src="js/modernizr.js"></script>
-      <script>
-        (function(i, s, o, g, r, a, m) {
-          i['GoogleAnalyticsObject'] = r;
-          i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-          }, i[r].l = 1 * new Date();
-          a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-          a.async = 1;
-          a.src = g;
-          m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      </div>
+    </section>
 
-        ga('create', 'UA-64318018-1', 'auto');
-        ga('send', 'pageview');
-      </script>
 
-      <!-- Preloader -->
-      <script type="text/javascript">
-        //<![CDATA[
-        $(window).load(function() { // makes sure the whole site is loaded
-            $('#status').fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(500).fadeOut('slow'); // will fade out the white DIV that covers the website.
-            $('body').delay(500).css({
-              'overflow': 'visible'
-            });
-          })
-          //]]>
-      </script>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="legals">
 
-  </body>
+              <li>
+                <p>Made with
+                  <FONT COLOR="BF360C"><i class="fa fa-heart"></i></FONT> by <a href="http://nullstudios.me">Null Studios</a> | UBC COSAS. All Rights Reserved.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 credit">
+            <a href="http://www.cus.ca">
+              <img src="img/cus.png">
+            </a>
+            <a href="http://www.sauder.ubc.ca">
+              <img src="img/sauder.png" Hspace="20">
+            </a>
+            <a href="http://www.ubc.ca">
+              <img src="img/ubc.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="status">&nbsp;</div>
-  </div>
+      ga('create', 'UA-64318018-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
-  </html>
+    <!-- Preloader -->
+    <script type="text/javascript">
+      //<![CDATA[
+      $(window).load(function() { // makes sure the whole site is loaded
+          $('#status').fadeOut(); // will first fade out the loading animation
+          $('#preloader').delay(500).fadeOut('slow'); // will fade out the white DIV that covers the website.
+          $('body').delay(500).css({
+            'overflow': 'visible'
+          });
+        })
+        //]]>
+    </script>
+
+</body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+</html>
