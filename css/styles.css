@@ -1257,7 +1257,7 @@ CONTACT US
 .contact-wrap {
   position: relative;
 }
-.crap {
+.crap.input {
   width: 100%;
 }
 
@@ -1401,4 +1401,7 @@ p {
 
 .portfolio {
   overflow-x: hidden;
+}
+.inputWider {
+  width: 100%;
 }
