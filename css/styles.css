@@ -409,8 +409,11 @@ Tables
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
 }
+
 
 /* ==========================================================================
 Global Styles
@@ -988,6 +991,7 @@ MATERIAL CARDS
 
 /* End defaults*/
 
+
 .card {
   display: inline-block;
   vertical-align: top;
@@ -995,13 +999,25 @@ MATERIAL CARDS
   position: relative;
   overflow: hidden;
   margin: 10px;
-  background: #E0F2F1;
+  background: #B2DFDB;
   box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
   color: #272727;
-  border-radius: 6px;
+  border-radius: 5px;
+  margin: 20px;
 }
+
+@media handheld, screen and (max-width: 1200px) {
+  .card {
+    width: 300px;
+  }
+  .cardContainer {
+    margin-right: 15px;
+  }
+}
+
+
 .card .title {
   line-height: 5px;
   font-size: 24px;
@@ -1055,11 +1071,13 @@ MATERIAL CARDS
 
 }
 
+
 .cardContainer {
   overflow-x: hidden;
   padding-left: 75px;
   padding-right: 75px;
 }
+
 
 .modalBio {
   border-radius: 20px;
@@ -1068,6 +1086,8 @@ MATERIAL CARDS
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
   max-width: 100%;
 }
+
+
 
 
 /* ==========================================================================
@@ -1091,6 +1111,23 @@ PROFESSIONAL RESOURCE DATABASE BUTTON
   color: #5DC8CD;
   border: solid 4px #5DC8CD;
 }
+
+
+.ombud-btn {
+  display: inline-block;
+  padding: 25px 40px;
+  color: #5DC8CD;
+  border: solid 4px #5DC8CD;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.ombud-btn:hover, .ignite-btn:focus {
+  color: #1DE9B6;
+  border: solid 4px #1DE9B6;
+}
+
+
 
 /* ==========================================================================
 DATABASE PAGE HEADER
@@ -1334,4 +1371,34 @@ Waypoints
 }
 .cool {
   opacity: 0.8;
+}
+
+.ombudContainer {
+  padding-left: 300px;
+  padding-right: 300px;
+  overflow-x: hidden;
+}
+
+
+@media handheld, screen and (max-width: 800px) {
+  .ombudContainer {
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+}
+
+li {
+  font-size: 14px;
+  color: #424242;
+}
+p {
+  color: #424242;
+}
+.text-left {
+  overflow-x: hidden;
+}
+
+.portfolio {
+  overflow-x: hidden;
 }
