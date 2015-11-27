@@ -1405,3 +1405,7 @@ p {
 .inputWider {
   width: 100%;
 }
+
+.modal-header {
+  border-color: #fff;
+}
