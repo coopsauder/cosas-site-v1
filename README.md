@@ -1,1 +1,1 @@
-# jhylee.github.io
+# Sauder Co-op Association Website
