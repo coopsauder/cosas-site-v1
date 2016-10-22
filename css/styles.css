@@ -606,8 +606,7 @@ PAGE HEADER
 ========================================================================== */
 
 .hero {
-  background: url('../img/optimized.gif') no-repeat center center;
-  opacity: 0.9;
+  background: url('../img/COSAS BANNER-large.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -625,7 +624,7 @@ PAGE HEADER
   color: #a1a9b0;
   display: inline-block;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .hero h1 {
     font-size: 30px;
   }
@@ -743,7 +742,7 @@ COSAS PERKS
 SIGNATURE CO-OP EVENTS
 ========================================================================== */
 
-.swag {
+.portrait {
   background: url('../img/plants-bg.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -752,13 +751,13 @@ SIGNATURE CO-OP EVENTS
   background-attachment: fixed;
   padding: 50px 0;
 }
-.swag h1 {
+.portrait h1 {
   color: #fff;
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-.swag h1 span {
+.portrait h1 span {
   display: block;
   font-size: 25px;
   margin-top: 20px;
