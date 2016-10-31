@@ -610,7 +610,7 @@ PAGE HEADER
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: contain;
   padding: 65px 0 300px 0;
   height: auto;
   overflow-y: hidden;
